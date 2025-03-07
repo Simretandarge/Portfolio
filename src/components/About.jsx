@@ -13,38 +13,41 @@ const About = () => {
 
         {/* Frontend Skills */}
         <h3 className="text-2xl font-semibold mt-8 mb-4">Frontend</h3>
-        {renderSkill("HTML & CSS", "w-11/12")}
-        {renderSkill("React JS", "w-10/12")}
-        {renderSkill("Vue JS", "w-8/12")}
-        {renderSkill("Tailwind CSS", "w-9/12")}
-        {renderSkill("Bootstrap", "w-8/12")}
+        {renderEmojiSkill("HTML & CSS", 5)}
+        {renderEmojiSkill("React JS", 4)}
+        {renderEmojiSkill("Vue JS", 3)}
+        {renderEmojiSkill("Tailwind CSS", 4)}
+        {renderEmojiSkill("Bootstrap", 3)}
 
         {/* Backend Skills */}
         <h3 className="text-2xl font-semibold mt-8 mb-4">Backend</h3>
-        {renderSkill("Django", "w-10/12")}
-        {renderSkill("Node JS", "w-9/12")}
-        {renderSkill("Flask", "w-8/12")}
-        {renderSkill("Ruby on Rails", "w-7/12")}
+        {renderEmojiSkill("Django", 4)}
+        {renderEmojiSkill("Node JS", 4)}
+        {renderEmojiSkill("Flask", 3)}
+        {renderEmojiSkill("Ruby on Rails", 2)}
 
         {/* AI & Data Science Skills */}
         <h3 className="text-2xl font-semibold mt-8 mb-4">AI & Data Science</h3>
-        {renderSkill("TensorFlow", "w-10/12")}
-        {renderSkill("PyTorch", "w-9/12")}
-        {renderSkill("Scikit-learn", "w-9/12")}
-        {renderSkill("Pandas", "w-10/12")}
-        {renderSkill("NumPy", "w-10/12")}
+        {renderEmojiSkill("TensorFlow", 5)}
+        {renderEmojiSkill("PyTorch", 4)}
+        {renderEmojiSkill("Scikit-learn", 4)}
+        {renderEmojiSkill("Pandas", 5)}
+        {renderEmojiSkill("NumPy", 5)}
       </div>
     </div>
   );
 };
 
-const renderSkill = (name, width) => {
+const renderEmojiSkill = (name, level) => {
+  const total = 5;
+  let progress = "";
+  for (let i = 0; i < total; i++) {
+    progress += i < level ? "🟩" : "⬜";
+  }
   return (
     <div className="flex items-center mb-4">
       <label className="w-3/12 font-medium">{name}</label>
-      <div className="grow bg-gray-800 rounded-full h-2.5">
-        <div className={`bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full ${width}`}></div>
-      </div>
+      <span className="text-xl">{progress}</span>
     </div>
   );
 };
