@@ -18,7 +18,7 @@ const Hero = () => {
                 , Full-Stack Developer
             </h1>
             <p className='mt-4 text-lg text-gray-300'>
-                I specialize in building modern and responsive web applications.
+                Full-Stack Developer and AI Engineer, I specialize in building modern and responsive web applications.
             </p>
             <div className='mt-8 space-x-4'>
                 {/* Contact Button links to #contact */}
