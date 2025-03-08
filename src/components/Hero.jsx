@@ -30,17 +30,17 @@ const Hero = () => {
                     </button>
                 </a>
 
-                {/* Resume Button downloads resume.pdf */}
-                <a href="/resume.pdf" download="Simret_Resume.pdf">
-                <button className='bg-gradient-to-r from-gray-500 to-blue-500 text-white
-                transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>
-                    Resume
-                </button>
-</a>
-
+                {/* View Resume Button - Opens PDF in new tab */}
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <button className='bg-gradient-to-r from-gray-500 to-blue-500 text-white
+                    transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>
+                        View Resume
+                    </button>
+                </a>
             </div>
         </div>
     );
 }
 
 export default Hero;
+

@@ -11,28 +11,37 @@ const About = () => {
           as well as machine learning, I strive to create seamless and efficient user experiences.
         </p>
 
-        {/* Frontend Skills */}
-        <h3 className="text-2xl font-semibold mt-8 mb-4">Frontend</h3>
-        {renderEmojiSkill("HTML & CSS", 5)}
-        {renderEmojiSkill("React JS", 4)}
-        {renderEmojiSkill("Vue JS", 3)}
-        {renderEmojiSkill("Tailwind CSS", 4)}
-        {renderEmojiSkill("Bootstrap", 3)}
-
-        {/* Backend Skills */}
-        <h3 className="text-2xl font-semibold mt-8 mb-4">Backend</h3>
-        {renderEmojiSkill("Django", 4)}
-        {renderEmojiSkill("Node JS", 4)}
-        {renderEmojiSkill("Flask", 3)}
-        {renderEmojiSkill("Ruby on Rails", 2)}
-
-        {/* AI & Data Science Skills */}
-        <h3 className="text-2xl font-semibold mt-8 mb-4">AI & Data Science</h3>
-        {renderEmojiSkill("TensorFlow", 5)}
-        {renderEmojiSkill("PyTorch", 4)}
-        {renderEmojiSkill("Scikit-learn", 4)}
-        {renderEmojiSkill("Pandas", 5)}
-        {renderEmojiSkill("NumPy", 5)}
+        {/* Skills Section - Side by Side */}
+        <div className="grid grid-cols-3 gap-8 text-center">
+          {/* Frontend Skills */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-4">Frontend</h3>
+            {renderEmojiSkill("HTML & CSS", 5)}
+            {renderEmojiSkill("React JS", 4)}
+            {renderEmojiSkill("Vue JS", 3)}
+            {renderEmojiSkill("Tailwind CSS", 4)}
+            {renderEmojiSkill("Bootstrap", 3)}
+          </div>
+          
+          {/* Backend Skills */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-4">Backend</h3>
+            {renderEmojiSkill("Django", 4)}
+            {renderEmojiSkill("Node JS", 4)}
+            {renderEmojiSkill("Flask", 3)}
+            {renderEmojiSkill("Ruby on Rails", 2)}
+          </div>
+          
+          {/* AI & Data Science Skills */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-4">AI & Data Science</h3>
+            {renderEmojiSkill("TensorFlow", 5)}
+            {renderEmojiSkill("PyTorch", 4)}
+            {renderEmojiSkill("Scikit-learn", 4)}
+            {renderEmojiSkill("Pandas", 5)}
+            {renderEmojiSkill("NumPy", 5)}
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -45,11 +54,12 @@ const renderEmojiSkill = (name, level) => {
     progress += i < level ? "🟩" : "⬜";
   }
   return (
-    <div className="flex items-center mb-4">
-      <label className="w-3/12 font-medium">{name}</label>
+    <div className="flex flex-col items-center mb-4">
+      <label className="font-medium mb-1">{name}</label>
       <span className="text-xl">{progress}</span>
     </div>
   );
 };
 
 export default About;
+
