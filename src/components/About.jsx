@@ -11,10 +11,10 @@ const About = () => {
           as well as machine learning, I strive to create seamless and efficient user experiences.
         </p>
 
-        {/* Skills Section - Side by Side */}
+        {/* Skills Section - In Box Layout */}
         <div className="grid grid-cols-3 gap-8 text-center">
           {/* Frontend Skills */}
-          <div>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">Frontend</h3>
             {renderEmojiSkill("HTML & CSS", 5)}
             {renderEmojiSkill("React JS", 4)}
@@ -24,7 +24,7 @@ const About = () => {
           </div>
           
           {/* Backend Skills */}
-          <div>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">Backend</h3>
             {renderEmojiSkill("Django", 4)}
             {renderEmojiSkill("Node JS", 4)}
@@ -33,7 +33,7 @@ const About = () => {
           </div>
           
           {/* AI & Data Science Skills */}
-          <div>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">AI & Data Science</h3>
             {renderEmojiSkill("TensorFlow", 5)}
             {renderEmojiSkill("PyTorch", 4)}
