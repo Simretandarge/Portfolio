@@ -24,7 +24,7 @@ const About = () => {
           </div>
           
           {/* Backend Skills */}
-          <div className="p-6 rounded-lg shadow-lg border-4 border-yellow-500 transform transition-transform duration-300 hover:scale-105">
+          <div className="p-6 rounded-lg shadow-lg border-4 border-purple-500 transform transition-transform duration-300 hover:scale-105">
             <h3 className="text-2xl font-semibold mb-4">Backend</h3>
             {renderEmojiSkill("Django", 4)}
             {renderEmojiSkill("Node JS", 4)}
