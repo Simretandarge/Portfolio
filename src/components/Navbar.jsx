@@ -52,7 +52,7 @@ const Navbar = () => {
           {/* Mobile Buttons */}
           <a href="#contact">
             <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full'>
-              Connect Me
+              Contact me
             </button>
           </a>
           <a href="my-react-vite-app/src/assets/Science_CV (1).pdf" download>
