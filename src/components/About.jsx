@@ -14,7 +14,7 @@ const About = () => {
         {/* Skills Section - Box Layout with Colors & Hover Animation */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
           {/* Frontend Skills */}
-          <div className="p-6 rounded-lg shadow-lg bg-gradient-to-r from-green-500 to-blue-500 transform transition-transform duration-300 hover:scale-105">
+          <div className="p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-500 to-blue-500 transform transition-transform duration-300 hover:scale-105">
             <h3 className="text-2xl font-semibold mb-4">Frontend</h3>
             {renderEmojiSkill("HTML & CSS", 5)}
             {renderEmojiSkill("React JS", 4)}
@@ -33,7 +33,7 @@ const About = () => {
           </div>
           
           {/* AI & Data Science Skills */}
-          <div className="p-6 rounded-lg shadow-lg bg-gradient-to- from-green-500 to-blue-500 transform transition-transform duration-300 hover:scale-105">
+          <div className="p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-500 to-blue-500 transform transition-transform duration-300 hover:scale-105">
             <h3 className="text-2xl font-semibold mb-4">AI & Data Science</h3>
             {renderEmojiSkill("TensorFlow", 5)}
             {renderEmojiSkill("PyTorch", 4)}
