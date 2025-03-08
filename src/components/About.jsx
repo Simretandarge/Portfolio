@@ -18,10 +18,10 @@ const About = () => {
         </p>
 
         {/* Skills Section - Interactive Boxes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
           {/* Frontend Skills */}
           <div 
-            className={`p-6 rounded-lg shadow-lg cursor-pointer transition-transform duration-300 ${selectedCategory === "Frontend" ? "scale-105 bg-gradient-to-r from-blue-500 to-purple-500" : "bg-gray-800 hover:scale-105"}`}
+            className={`p-6 rounded-lg shadow-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 ${selectedCategory === "Frontend" ? "bg-gradient-to-r from-blue-500 to-purple-500" : "bg-gray-800"}`}
             onClick={() => toggleCategory("Frontend")}
           >
             <h3 className="text-2xl font-semibold mb-4">Frontend</h3>
@@ -38,7 +38,7 @@ const About = () => {
           
           {/* Backend Skills */}
           <div 
-            className={`p-6 rounded-lg shadow-lg cursor-pointer transition-transform duration-300 ${selectedCategory === "Backend" ? "scale-105 bg-gradient-to-r from-green-500 to-teal-500" : "bg-gray-800 hover:scale-105"}`}
+            className={`p-6 rounded-lg shadow-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 ${selectedCategory === "Backend" ? "bg-gradient-to-r from-green-500 to-teal-500" : "bg-gray-800"}`}
             onClick={() => toggleCategory("Backend")}
           >
             <h3 className="text-2xl font-semibold mb-4">Backend</h3>
@@ -54,7 +54,7 @@ const About = () => {
           
           {/* AI & Data Science Skills */}
           <div 
-            className={`p-6 rounded-lg shadow-lg cursor-pointer transition-transform duration-300 ${selectedCategory === "AI & Data Science" ? "scale-105 bg-gradient-to-r from-yellow-500 to-orange-500" : "bg-gray-800 hover:scale-105"}`}
+            className={`p-6 rounded-lg shadow-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 ${selectedCategory === "AI & Data Science" ? "bg-gradient-to-r from-yellow-500 to-orange-500" : "bg-gray-800"}`}
             onClick={() => toggleCategory("AI & Data Science")}
           >
             <h3 className="text-2xl font-semibold mb-4">AI & Data Science</h3>
