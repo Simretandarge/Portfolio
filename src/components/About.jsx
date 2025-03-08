@@ -24,7 +24,7 @@ const About = () => {
           </div>
           
           {/* Backend Skills */}
-          <div className="p-6 rounded-lg shadow-lg border-4 border-green-500 transform transition-transform duration-300 hover:scale-105">
+          <div className="p-6 rounded-lg shadow-lg border-4 border-yellow-500 transform transition-transform duration-300 hover:scale-105">
             <h3 className="text-2xl font-semibold mb-4">Backend</h3>
             {renderEmojiSkill("Django", 4)}
             {renderEmojiSkill("Node JS", 4)}
@@ -33,7 +33,7 @@ const About = () => {
           </div>
           
           {/* AI & Data Science Skills */}
-          <div className="p-6 rounded-lg shadow-lg border-4 border-yellow-500 transform transition-transform duration-300 hover:scale-105">
+          <div className="p-6 rounded-lg shadow-lg border-4 border-green-500 transform transition-transform duration-300 hover:scale-105">
             <h3 className="text-2xl font-semibold mb-4">AI & Data Science</h3>
             {renderEmojiSkill("TensorFlow", 5)}
             {renderEmojiSkill("PyTorch", 4)}
